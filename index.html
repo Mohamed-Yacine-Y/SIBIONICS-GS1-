@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- icons -->
+    <!-- icons  fontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -13,16 +13,25 @@
       referrerpolicy="no-referrer"
     />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
     <link rel="shortcut icon" href="images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <!-- CSS Style -->
     <link rel="stylesheet" href="styles/style.css" />
 
-    <title>Document</title>
+    <title>SIBIONICS GS1</title>
   </head>
   <body>
     <!-- This anchor here is an accessibility feature. It allows keyboard and screen reader users to skip repetitive navigation and go directly to the main content. -->
@@ -57,46 +66,56 @@
         </div>
       </div>
       <!-- ? Main Nav -->
-      <div class="wrapper mainNav__wrapper">
-        <!-- Logo -->
-        <div class="mainNav__logo">
-          <a href="#home" aria-label="Sibionics GS1 Home">
-            SIBI<span>O</span>NICS <span>GS1</span>
-          </a>
-        </div>
+      <div class="mainNav">
+        <div class="wrapper mainNav__wrapper">
+          
+          <!-- Logo -->
+          <div class="mainNav__logo">
+            <a href="#home" aria-label="Sibionics GS1 Home">
+              SIBI<span class="spanO">O</span>NICS
+              <span class="spanGS1">GS1</span>
+            </a>
+          </div>
 
-        <!-- Navigation Links -->
-        <nav
-          class="mainNav__menu"
-          id="mainNavMenu"
-          aria-label="Main navigation"
-        >
-          <ul class="mainNav__list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- Buy Button -->
-        <div class="mainNav__buyBtn">
-          <a href="">
-            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-            <span>Buy Now</span>
-          </a>
+          <!-- Navigation Links -->
+          <nav
+            class="mainNav__menu"
+            id="mainNavMenu"
+            aria-label="Main navigation"
+          >
+            <ul class="mainNav__list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Buy Button -->
+          <div class="mainNav__buyBtn">
+            <a href="">
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              <span>Buy Now</span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="mainNav__hamburger">
+            <button
+              class="mainNav__toggle"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="mainNavMenu"
+            >
+              <i class="fa-solid fa-bars active" aria-hidden="true"></i>
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          </div>
+
         </div>
-        <!-- Mobile Menu Button -->
-        <button
-          class="mainNav__toggle"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="mainNavMenu"
-        >
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
       </div>
     </header>
 
@@ -105,5 +124,7 @@
 
     <!-- ! Footer -->
     <footer id="footer"></footer>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
